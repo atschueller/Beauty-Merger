@@ -1,6 +1,6 @@
 var express = require("express");
-var mongojs = require("mongojs");
 const mongoose = require('mongoose');
+const routes = require("./routes");
 const bodyParser = require('body-parser');
 var PORT = process.env.PORT || 3001;
 
@@ -9,15 +9,9 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var databaseUrl = "beautymerger";
-
-var db = mongojs(databaseUrl);
+app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/beautymerger")
-
-db.on("error", function (error) {
-    console.log("Database Error:", error);
-});
 
 
 app.listen(PORT, function () {
