@@ -9,12 +9,11 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var databaseUrl = "beautyproducts";
-var collections = ["products"];
+var databaseUrl = "beautymerger";
 
-var db = mongojs(databaseUrl, collections);
+var db = mongojs(databaseUrl);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/beautyproducts")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/beautymerger")
 
 db.on("error", function (error) {
     console.log("Database Error:", error);
