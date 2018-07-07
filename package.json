@@ -1,0 +1,27 @@
+{
+  "name": "beauty-merger",
+  "version": "1.0.0",
+  "description": "Project Proposal\r Project Name:   Beauty Merger",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atschueller/Beauty-Merger.git"
+  },
+  "author": "Adrienne Schueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atschueller/Beauty-Merger/issues"
+  },
+  "homepage": "https://github.com/atschueller/Beauty-Merger#readme"
+}
