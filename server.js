@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const routes = require("./routes");
+const routes = require("/routes");
 const bodyParser = require('body-parser');
 var logger = require("morgan");
 const PORT = process.env.PORT || 3001;
