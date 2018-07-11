@@ -1,8 +1,12 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const routes = require("/routes");
+const routes = require("./routes");
 const bodyParser = require('body-parser');
 var logger = require("morgan");
+var Promise = require("bluebird");
+
+mongoose.Promise = Promise;
+
 const PORT = process.env.PORT || 3001;
 
 var app = express();
@@ -13,7 +17,16 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/beautymerger")
+mongoose.connect("mongodb://localhost/beautymerger");
+var db = mongoose.connection;
+
+db.on("error", function(error) {
+    console.log("Mongoose Error:", error)
+});
+
+db.once("open", function() {
+    console.log("Mongoose connection successful")
+});
 
 
 app.listen(PORT, function () {

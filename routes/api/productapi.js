@@ -6,7 +6,7 @@ router.route("/")
 .post(productsController.create);
 
 router.route("/:name")
-.findOne(productsController.findOne);
+.get(productsController.findOne);
 
 module.exports = router;
 
