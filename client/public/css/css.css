@@ -1,12 +1,43 @@
+body {
+    background-image: url("backround2.jpg");
+}
 nav {
     text-align: center;
 }
+.nav-logo {
+    margin-left: -50px;
+    color: black;
+    font-family: 'Chonburi', cursive;
+}
+button {
+    background-color: lightcyan;
+}
+input {
+    width: 475px;
+}
+.links {
+    font-size: 15px;
+    font-family: 'Chonburi', cursive;
+    color: black;
+}
+.hello {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    color: plum;
+}
 h1 {
     text-align: center;
+    font-family: 'Chonburi', cursive;
+    text-shadow: 2px 2px plum;
 }
-.imagesDiv {
-    width: 200px;
-    height: 300px;
+p {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer {
     text-align: center;
