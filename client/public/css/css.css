@@ -1,5 +1,8 @@
-body {
-    background-image: url("backround2.jpg");
+.test {
+    background-image: src("images/backround3.jpg");
+    width: 300px;
+    height: 300px;
+    
 }
 nav {
     text-align: center;
@@ -10,10 +13,12 @@ nav {
     font-family: 'Chonburi', cursive;
 }
 button {
-    background-color: lightcyan;
+    background-color: black;
+    color: plum;
 }
 input {
     width: 475px;
+    padding: 5px;
 }
 .links {
     font-size: 15px;

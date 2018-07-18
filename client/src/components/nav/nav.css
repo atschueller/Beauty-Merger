@@ -1,0 +1,21 @@
+nav {
+    text-align: center;
+}
+.nav-logo {
+    margin-left: -50px;
+    color: black;
+    font-family: 'Chonburi', cursive;
+}
+button {
+    background-color: black;
+    color: plum;
+}
+input {
+    width: 475px;
+    padding: 5px;
+}
+.links {
+    font-size: 15px;
+    font-family: 'Chonburi', cursive;
+    color: black;
+}
