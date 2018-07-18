@@ -10,9 +10,18 @@ nav {
     color: black;
     font-family: 'Chonburi', cursive;
 }
-button {
+.btn btn-sm {
     background-color: black;
     color: plum;
+}
+.hvr-pulse {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        background-color: black;
+        color: plum;
 }
 input {
     width: 475px;

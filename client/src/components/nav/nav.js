@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import {render} from 'react-dom';
 
 const Nav = () => (
     <nav className="navbar">
