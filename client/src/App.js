@@ -1,22 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CreateProfile from './pages/CreateProfile';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import Results from './pages/Results';
-import './App.css';
+import CreateProfile from "./pages/CreateProfile";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Results from "./pages/Results";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
 
 const App = () => {
   <Router>
-  <div>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/CreateProfile" component={CreateProfile} />
-      <Route exact path="/Profile" component={Profile} />
-      <Route exact path="/Results" component={Results} />
-    </Switch>
-  </div>
-</Router>
-}
+    <div>
+      <Nav />
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/CreateProfile" component={CreateProfile} />
+        <Route exact path="/Profile" component={Profile} />
+        <Route exact path="/Results" component={Results} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>;
+};
 
 export default App;

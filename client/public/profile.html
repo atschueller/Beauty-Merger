@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Merienda" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/css.css">
     <title>Beauty Merger Profile</title>
@@ -13,49 +14,65 @@
 
 <body>
     <nav>
-        <a>LOGO</a>
-        <button>Login</button>
-        <button> Sign up</button>
-        <input>
-        <a href="#">Links</a>
+        <a class="nav-logo">Beauty Merger</a>
+        <button class="btn btn-sm">Login</button>
+        <button class="btn btn-sm"> Sign up</button>
+        <input placeholder="Search">
+        <a class="links" href="#">Links</a>
     </nav>
+    <h1 className="hello">Hello Beautiful...</h1>
     <h1>My Profile</h1>
+    <br />
     <div class="container">
         <div class="profileDiv">
-            <div>Name:</div>
+            <div class="topic">Name:</div>
             <div class="inputDiv"></div>
-            <div>Age(optional):</div>
+            <br />
+            <div class="topic">Age(optional):</div>
             <div class="inputDiv"></div>
-            <div>Ethnicity:</div>
+            <br />
+            <div class="topic">Ethnicity:</div>
             <div class="inputDiv"></div>
-            <div>Eye Color:</div>
+            <br />
+            <div class="topic">Eye Color:</div>
             <div class="inputDiv"></div>
-            <div>Hair Color:</div>
+            <br />
+            <div class="topic">Hair Color:</div>
             <div class="inputDiv"></div>
-            <div>Hair Type:</div>
+            <br />
+            <div class="topic">Hair Type:</div>
             <div class="inputDiv"></div>
-            <div>Skin Tone:</div>
+            <br />
+            <div class="topic">Skin Tone:</div>
             <div class="inputDiv"></div>
-            <div>Skin Type:</div>
+            <br />
+            <div class="topic">Skin Type:</div>
             <div class="inputDiv"></div>
-            <div>Favorite Product Brands:</div>
+            <br />
+            <div class="topic">Favorite Product Brands:</div>
             <div class="inputDiv"></div>
-            <br>
-            <br>
-            <div>Write a Review</div>
-            <div class="reviewDiv"></div>
-            <button type="submit">Submit</button>
+            <br />
+            <br />
         </div>
         <div class="reviewContainer">
-            <div>My Reviews:</div>
-            <div>(Review Div)</div>
+            <div class="topic">Write a Review</div>
+            <input type="text" class="reviewInput"></input>
+            <br />
+            <br />
+            <button type="submit" class="btn btn-md" id="submit">Submit</button>
+            <br />
+            <br />
+            <div class="topic">
+                <div>My Previous Reviews:</div>
+                <div>(reviews)</div>
+            </div>
         </div>
     </div>
     <br>
     <br>
     <footer>
-        <input>
-        <a href="#">Contact Us</a>
+        <input type="text" placeholder="Search">
+        <a href="#" class="links">Contact Us</a>
     </footer>
 
 </body>

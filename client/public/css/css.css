@@ -10,18 +10,9 @@ nav {
     color: black;
     font-family: 'Chonburi', cursive;
 }
-.btn btn-sm {
+button {
     background-color: black;
     color: plum;
-}
-.hvr-pulse {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        background-color: black;
-        color: plum;
 }
 input {
     width: 475px;
@@ -57,25 +48,21 @@ p {
 footer {
     text-align: center;
 }
-.container {
-    display: flex;
-    position: relative;
+.topic {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.reviewContainer {
+    text-align: center;
+}
+.reviewInput {
+    width: 700px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
 }
 .resultsDiv {
     width: 300px;
     height: 300px;
 }
-.profileDiv {
-    flex: 2;
-    margin-left: 50px;
-}
-.reviewContainer {
-    flex: 1;
-}
-.reviewDiv {
-    width: 50;
-    height: 75px;
-    border-style: solid;
-    border-color: black;
-}
-
