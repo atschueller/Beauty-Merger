@@ -66,3 +66,29 @@ footer {
     width: 300px;
     height: 300px;
 }
+form {
+    width: 900px;
+    height: 1350px;
+    margin-left: 225px;
+    border: 5px solid black;
+}
+.basics {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.basicsInput {
+    margin-left: 200px;
+    font-family: 'Merienda', cursive;
+}
+.custom-select {
+    width: 475px;
+    height: 50px;
+    margin-left: 200px;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+#formSubmit {
+    margin-left: 400px;
+}

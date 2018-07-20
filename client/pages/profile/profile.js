@@ -9,7 +9,7 @@ class Profile extends React.Component {
       <React.Fragment>
         <Nav />
         <Header />
-        <h1>My Profile</h1>
+        <h1>Here is Your Profile</h1>
         <br />
         <div class="container">
           <div class="profileDiv">

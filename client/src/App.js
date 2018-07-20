@@ -19,6 +19,7 @@ const App = () => {
         <Route exact path="/CreateProfile" component={CreateProfile} />
         <Route exact path="/Profile" component={Profile} />
         <Route exact path="/Results" component={Results} />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </div>
