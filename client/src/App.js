@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CreateProfile from "./pages/CreateProfile";
+import ProfileForm from "./pages/ProfileForm";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Results from "./pages/Results";
@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/CreateProfile" component={CreateProfile} />
+        <Route exact path="/CreateProfile" component={ProfileForm} />
         <Route exact path="/Profile" component={Profile} />
         <Route exact path="/Results" component={Results} />
         <Route component={NotFound} />

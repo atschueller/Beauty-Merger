@@ -9,8 +9,13 @@ class Results extends React.Component {
       <React.Fragment>
         <Nav />
         <Header />
-
-         <Footer />
+        <h1>Here Are Your Beauty Results!</h1>
+        <br />
+        <br />
+        <div className="resultsDiv">Results Displayed Here</div>
+        <br />
+        <br />
+        <Footer />
       </React.Fragment>
     );
   }
