@@ -4,6 +4,7 @@ const routes = require("./routes");
 const bodyParser = require('body-parser');
 var logger = require("morgan");
 var Promise = require("bluebird");
+var path = require("path");
 
 mongoose.Promise = Promise;
 
@@ -11,9 +12,12 @@ const PORT = process.env.PORT || 3001;
 
 var app = express();
 
+app.set('views', path.resolve(__dirname,'views'));
+
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static("public"));
 
 app.use(routes);
 

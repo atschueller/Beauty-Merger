@@ -13,12 +13,11 @@ class Home extends React.Component {
         <br />
         <br />
         <p>
-          The ultimate resource for reviewing, rating, and connecting with other
-          product lovers.
+          The ultimate beauty-product resource.
         </p>
         <p>
-          Find fellow users with similar beauty needs and get informed before
-          you purchase.
+          Search reviews from other product-lovers with similar beauty needs and get informed before
+          you buy.
         </p>
         <br />
         <br />
