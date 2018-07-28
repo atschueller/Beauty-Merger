@@ -2,6 +2,17 @@ footer {
     text-align: center;
 }
 input {
-    width: 475px;
+    width: 500px;
     padding: 5px;
+}
+.nav-logo {
+    color: black;
+    font-family: 'Chonburi', cursive;
+
+}
+#name {
+    margin-right: 20px;
+}
+#profile {
+    margin-left: 20px;
 }

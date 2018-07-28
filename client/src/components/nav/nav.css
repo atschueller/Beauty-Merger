@@ -1,17 +1,9 @@
-nav {
-    text-align: center;
-}
 .nav-logo {
-    margin-left: -50px;
     color: black;
     font-family: 'Chonburi', cursive;
 }
-button {
-    background-color: black;
-    color: plum;
-}
 input {
-    width: 475px;
+    width: 500px;
     padding: 5px;
 }
 .links {

@@ -1,9 +1,11 @@
 import React from "react";
+import "./Footer.css"
 
 const Footer = () => (
     <footer>
-        <input />
-        <a href="#" class ="links">Contact Us</a>
+        <a className="nav-logo" href="/" id="name">Beauty Merger</a>
+        <input placeholder="Search a Product"/>
+        <a href="\Profile" className="nav-logo" id="profile">My Profile</a>
     </footer>
   );
   

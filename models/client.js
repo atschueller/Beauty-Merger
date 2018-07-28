@@ -2,37 +2,66 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  firstName: {
+  name: {
     type: String,
     trim: true,
     required: true
   },
-  lastName: {
+  age: {
     type: String,
     trim: true,
     required: true
   },
-  username: {
+  ethnicity: {
     type: String,
     trim: true,
     required: true
   },
-  password: {
+  eyecolor: {
     type: String,
     trim: true,
-    required: true,
-    validate: [
-      function(input) {
-        return input.length >= 6;
-      },
-      "Must be at least 6 characters."
-    ],
+    required: true
   },
+  haircolor: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  hairtype: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  hairdensity: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  hairtexture: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  skintone: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  skintype: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  productbrands: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  
   userCreated: {
     type: Date,
     default: Date.now
-  },
-  
+  }
 });
 
 const User = mongoose.model("user", userSchema);

@@ -1,14 +1,12 @@
 import React from 'react';
-import {render} from 'react-dom';
-
+import "./Nav.css";
 const Nav = () => (
     <nav className="navbar">
-      <a href="#" className="nav-logo">Beauty Merger</a>
-        <button className="btn btn-sm">Login</button>
-        <input />
-        <button className="btn btn-sm"> Sign up</button>
-        <a className="links" href="#">Links</a>
-    </nav>
+      <a href="/" className="nav-logo">Beauty Merger</a>
+        <a className="nav-logo" href="/Results">Search</a>
+        <a className="nav-logo" href="/ProfileForm"> Sign up</a>
+        <a href="/Profile"className="nav-logo"> My Profile</a>
+       </nav>
   );
   
   export default Nav;

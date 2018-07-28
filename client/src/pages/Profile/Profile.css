@@ -1,0 +1,23 @@
+#profilePageHeader {
+    margin-left: 5px;
+}
+.topic {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.reviewContainer {
+    text-align: center;
+}
+.reviewForm {
+    width: 700px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+}
+.newReview {
+    text-align: center;
+}
+textarea {
+    width: 500px;
+}

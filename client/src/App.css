@@ -1,28 +1,58 @@
-.App {
+body {
+  background-image: url("images/backround3.jpg");
+  background-size: cover;
+}
+button {
+  background-color: black;
+  color: plum;
+}
+input {
+  width: 500px;
+  padding: 5px;
+}
+.hello {
+  text-align: center;
+  font-family: 'Merienda', cursive;
+  color: purple;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  font-family: 'Chonburi', cursive;
+  font-weight: bold;
+  text-shadow: 3px 3px plum;
+  
+}
+p {
+  text-align: center;
+  font-family: 'Merienda', cursive;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resultsDiv {
+  width: 300px;
+  height: 300px;
+}
+.basics {
+  font-family: 'Merienda', cursive;
+  font-size: 20px;
+  font-weight: bolder;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.basicsInput {
+  margin-left: 200px;
+  font-family: 'Merienda', cursive;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.custom-select {
+  width: 475px;
+  height: 50px;
+  margin-left: 200px;
+  text-align: center;
+  font-family: 'Merienda', cursive;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#formSubmit {
+  margin-left: 400px;
 }

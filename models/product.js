@@ -11,13 +11,9 @@ const productSchema = new Schema({
     required: true
   },
   url: String,
-  description: String,
-  date: {
-    type: Date,
-    default: Date.now
-  }
-});
+  review: [{review: String}]
+  });
 
-const Product = mongoose.model("product", productSchema);
+const Product = mongoose.model("products", productSchema);
 
 module.exports = Product;
