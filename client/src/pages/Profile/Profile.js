@@ -8,7 +8,7 @@ import "./Profile.css";
 class Profile extends React.Component {
   state = {
     products: [],
-    productName: "",
+    name: "",
     brand: "",
     url: "",
     review: ""
@@ -22,7 +22,7 @@ class Profile extends React.Component {
       .then(res =>
         this.setState({
           products: res.data,
-          productName: "",
+          name: "",
           brand: "",
           url: "",
           review: ""
@@ -34,14 +34,13 @@ class Profile extends React.Component {
     event.preventDefault();
 
     const newFormData = {
-      productName: this.state.productName,
+      name: this.state.name,
       brand: this.state.brand,
       url: this.state.url,
       review: this.state.review
-    }
-
-    console.log('handleReviewSubmit called', newFormData)
-    if (this.state.productName && this.state.brand && this.state.review) {
+    };
+    console.log("handleReviewSubmit called", newFormData);
+    if (this.state.name && this.state.brand && this.state.review) {
       API.saveProductReview(newFormData).then(res => this.loadProducts());
     }
   };
@@ -97,11 +96,11 @@ class Profile extends React.Component {
             <br />
           </div>
           <div className="topic">Write a Review</div>
-          <form className="reviewForm" onSubmit={this.handleReviewSubmit}>
+          <form className="reviewForm" action="/submit" method="post" onSubmit={this.handleReviewSubmit}>
             <input
               className="newReview"
               onChange={this.handleInputChange}
-              name="productName"
+              name="name"
               placeholder="Product Name (required)"
             />
             <br />

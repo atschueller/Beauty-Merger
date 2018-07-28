@@ -49,7 +49,7 @@ class ProfileForm extends React.Component {
         <Nav />
         <Header />
         <h1>Please Fill Out Your Profile Form</h1>
-        <form className="NewForm">
+        <form className="NewForm" action="/submit" method="post" onSubmit={this.handleReviewSubmit}>
           <div className="basics">Name (Required):</div>
           <input
             type="text"
@@ -148,7 +148,6 @@ class ProfileForm extends React.Component {
             type="submit"
             id="formSubmit"
             className="btn btn-lg"
-            onSubmit={this.handleReviewSubmit}
           >
             Sign Up
           </button>

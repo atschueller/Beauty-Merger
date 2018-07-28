@@ -3,11 +3,11 @@ const productsController = require("../../controllers/productsController");
 
 router.route("/")
 .get(productsController.findAll)
-.post(productsController.create)
-.put(productsController.update);
+.post(productsController.create);
 
 router.route("/:name")
-.get(productsController.findOne);
+.get(productsController.findOne)
+.post(productsController.update);
 
 
 module.exports = router;
