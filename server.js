@@ -3,9 +3,8 @@ const mongoose = require('mongoose');
 const routes = require("./routes");
 const bodyParser = require('body-parser');
 var logger = require("morgan");
-var Promise = require("bluebird");
 
-mongoose.Promise = Promise;
+mongoose.Promise = global.Promise;
 
 const PORT = process.env.PORT || 3001;
 

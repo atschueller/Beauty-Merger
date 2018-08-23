@@ -6,3 +6,4 @@ Summary: Creating a web app that allows users to create an account to review/rat
 Technologies: MongoDB, Express, NodeJS, Bootstrap, React, HTML, CSS, Javascript
 New Technologies: Materialize, Animate On Scroll, Hover CSS
 
+https://beautymerger.herokuapp.com/

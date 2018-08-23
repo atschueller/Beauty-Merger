@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const productSchema = new Schema({
-  _id:  mongoose.Schema.Types.ObjectId,
   name: {
     type: String,
     required: true
@@ -12,13 +11,7 @@ const productSchema = new Schema({
     required: true
   },
   url: String,
-  review: [
-    {
-      review: {
-        type: String
-      }
-    }
-  ]
+  review: [String]
 });
 
 const Product = mongoose.model("products", productSchema);

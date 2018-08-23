@@ -13,7 +13,6 @@ class Profile extends React.Component {
     url: "",
     review: ""
   };
-
   componentDidMount() {
     this.loadProducts();
   }
@@ -21,11 +20,7 @@ class Profile extends React.Component {
     API.getAllProducts()
       .then(res =>
         this.setState({
-          products: res.data,
-          name: "",
-          brand: "",
-          url: "",
-          review: ""
+          products: res.data
         })
       )
       .catch(err => console.log(err));
@@ -37,11 +32,14 @@ class Profile extends React.Component {
       name: this.state.name,
       brand: this.state.brand,
       url: this.state.url,
-      review: this.state.review
+      review: [this.state.review]
     };
     console.log("handleReviewSubmit called", newFormData);
     if (this.state.name && this.state.brand && this.state.review) {
-      API.saveProductReview(newFormData).then(res => this.loadProducts());
+      API.saveProductReview(newFormData).then(res => {
+        console.log("saved product:", res.data);
+        this.loadProducts();
+      });
     }
   };
   handleInputChange = event => {
@@ -96,7 +94,12 @@ class Profile extends React.Component {
             <br />
           </div>
           <div className="topic">Write a Review</div>
-          <form className="reviewForm" action="/submit" method="post" onSubmit={this.handleReviewSubmit}>
+          <form
+            className="reviewForm"
+            action="/submit"
+            method="post"
+            onSubmit={this.handleReviewSubmit}
+          >
             <input
               className="newReview"
               onChange={this.handleInputChange}
@@ -142,7 +145,22 @@ class Profile extends React.Component {
           <br />
           <div className="topic">
             <div>My Previous Reviews:</div>
-            <div>(reviews)</div>
+            {this.state.products.map(p => {
+              return (
+                <div>
+                  <ul key={p._id}>
+                    <li>{p.name}</li>
+                    <li>{p.brand}</li>
+                    <li>{p.url}</li>
+                    <li>
+                      {p.review.map(r => (
+                        <span key={r}>{r}, </span>
+                      ))}
+                    </li>
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
         <br />
