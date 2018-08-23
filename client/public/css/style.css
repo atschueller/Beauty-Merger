@@ -13,10 +13,6 @@ nav {
 #profilePage {
     margin-left: 5px;
 }
-button {
-    background-color: black;
-    color: plum;
-}
 input {
     width: 475px;
     padding: 5px;
@@ -80,10 +76,6 @@ form {
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
-}
-.basicsInput {
-    margin-left: 200px;
-    font-family: 'Merienda', cursive;
 }
 .custom-select {
     width: 475px;

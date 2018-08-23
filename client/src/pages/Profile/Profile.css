@@ -10,14 +10,26 @@
     text-align: center;
 }
 .reviewForm {
-    width: 700px;
-    height: 400px;
+    width: 506px;
+    height: 310px;
     border-style: solid;
     border-color: black;
+    background-color: rgb(255, 217, 255);
 }
 .newReview {
     text-align: center;
+    background-color: rgb(255, 217, 255);
 }
 textarea {
     width: 500px;
+    height: 150px;
+}
+.reviewButton {
+    font-family: 'Chonburi', cursive;
+    color:  rgb(255, 217, 255);
+    margin-left: 210px;
+    width: 80px;
+}
+.myReviews {
+    margin-left: 50px;
 }

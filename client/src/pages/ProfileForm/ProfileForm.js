@@ -17,7 +17,7 @@ class ProfileForm extends React.Component {
     hairtexture: "",
     skintone: "",
     skintype: "",
-    productbrands: ""
+    productbrands: [],
   };
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -147,7 +147,6 @@ class ProfileForm extends React.Component {
           <button
             type="submit"
             id="formSubmit"
-            className="btn btn-lg"
           >
             Sign Up
           </button>

@@ -1,8 +1,24 @@
 .reviewPost {
-    text-align: center;
-
+    margin-left: 200px;
 }
-.postReview {
-    text-align: center;
+button {
+    background-color: black;
+    color: plum;
+    width: 80px;
+    height: 35px;
     
+}
+h3, h4, h5 {
+    font-family:  'Merienda', cursive;
+    font-weight: bold;
+}
+span {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.myReviews {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }

@@ -42,7 +42,7 @@ class Results extends React.Component {
         <Nav />
         <Header />
         <div className="searchDiv">
-          <h1>Search for A Product</h1>
+          <h1>Find A Product</h1>
           <br />
           <br />
           <form className="reviewPost" onSubmit={this.handleSearchSubmit}>
@@ -53,7 +53,6 @@ class Results extends React.Component {
               name="search"
               value={this.state.search}
             />
-            <br />
             <button className="findProduct">
               Search
             </button>
@@ -61,7 +60,6 @@ class Results extends React.Component {
         </div>
         <br />
         <br />
-        <div className="resultsDiv">Here Are Your Product Reviews!</div>
         <ResultsList>
           {this.state.products && this.state.products.map(product => {
             return <ResultsListItem {...product} />;
@@ -69,6 +67,8 @@ class Results extends React.Component {
         </ResultsList>
         <br />
         <br />
+        <br/>
+        <br/>
         <Footer />
       </React.Fragment>
     );

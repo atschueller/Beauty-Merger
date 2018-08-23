@@ -61,7 +61,7 @@ class Profile extends React.Component {
             <div className="topic">Name:</div>
             <div className="inputDiv" />
             <br />
-            <div className="topic">Age(optional):</div>
+            <div className="topic">Age (optional):</div>
             <div className="inputDiv" />
             <br />
             <div className="topic">Ethnicity:</div>
@@ -128,18 +128,7 @@ class Profile extends React.Component {
               placeholder="Review (required)"
             />
             <br />
-            <button
-            //disabled={
-            //!(
-            // this.state.name &&
-            //this.state.brand &&
-            //this.state.url &&
-            //this.state.review
-            //)
-            //}
-            >
-              Submit Product Review
-            </button>
+            <button className="reviewButton">Submit</button>
           </form>
           <br />
           <br />
@@ -149,12 +138,16 @@ class Profile extends React.Component {
               return (
                 <div>
                   <ul key={p._id}>
-                    <li>{p.name}</li>
-                    <li>{p.brand}</li>
-                    <li>{p.url}</li>
+                    <li>Name: {p.name}</li>
+                    <li>Brand: {p.brand}</li>
+                    <li>Url: {p.url}</li>
                     <li>
+                      {" "}
+                      Reviews:
                       {p.review.map(r => (
-                        <span key={r}>{r}, </span>
+                        <li className="myReviews" key={r}>
+                          {r},
+                        </li>
                       ))}
                     </li>
                   </ul>
